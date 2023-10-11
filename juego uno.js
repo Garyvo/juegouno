@@ -38,10 +38,25 @@ deck.push({ color: null, number: "cc", type: "comodin" });
 deck.push({ color: null, number: "cc", type: "comodin" });
 
 
-console.log(deck);
+//console.log(deck);
 
 const players = rl.question("¿cuantos jugadores seran?", {})
+const totalcards = players * 7;
+//repartir 7 cartas x jugador
+//recorroel total de targetas
+//(total de tarjetas = tarjetas/7 x jugador)
+//un arreglo x jugador
+var cardsplayers = {};
 
-console.log (players)
+for(var cTcards = 0; cTcards <7; cTcards++){
+  for( var cplayers = 0; cplayers < players; cplayers++){
+  //console.log ("players",cplayers);
+  if (!cardsplayers ["player_"+cplayers]) {
+    cardsplayers ["player_"+cplayers] = [];
+  }
+  cardsplayers ["player_"+cplayers].push(deck[cTcards]);
+}
+}
+console.log (cardsplayers);
 //npm init sirve para incializar un procecto en node
 //npm i o npm install <modulo> sirve para intalar el modulo

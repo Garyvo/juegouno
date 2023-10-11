@@ -1,0 +1,22 @@
+{
+  "name": "juegouno",
+  "version": "1.0.0",
+  "description": "juego de uno js",
+  "main": "juego uno.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-ph0/juegouno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-ph0/juegouno/issues"
+  },
+  "homepage": "https://github.com/daniel-ph0/juegouno#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
